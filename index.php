@@ -1,5 +1,9 @@
 <?php
 require_once 'TasksFactory/TaskFactory.php';
-ini_set('max_execution_time', 300);
 $taskManager = new TaskFactory();
-echo $taskManager->create('LargestPrimeFactor')->run();
+$startTime = microtime(true);
+echo sprintf('Result: %d', $taskManager->create('LargestPalindromeProduct')->run());
+$endTime = microtime(true);
+$executionTime = $endTime - $startTime;
+echo '<br>';
+echo sprintf('Execution time: %.2fs', $executionTime);

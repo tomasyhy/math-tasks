@@ -2,6 +2,7 @@
 require_once 'Tasks/LargestPrimeFactor.php';
 require_once 'Tasks/EvenFibonacciNumbers.php';
 require_once 'Tasks/MultiplesOf3And5.php';
+require_once 'Tasks/LargestPalindromeProduct.php';
 require_once 'FactoryMethod.php';
 
 /**
@@ -14,15 +15,6 @@ class TaskFactory implements FactoryMethod
 {
     public function create(string $taskName): TaskInterface
     {
-        switch ($taskName) {
-            case 'EvenFibonacciNumbers':
-                return new EvenFibonacciNumbers();
-            case 'MultiplesOf3And5':
-                return new MultiplesOf3And5();
-            case 'LargestPrimeFactor':
-                return new LargestPrimeFactor();
-            default:
-                throw new \InvalidArgumentException("$taskName is not a valid task name");
-        }
+        return new $taskName();
     }
 }
