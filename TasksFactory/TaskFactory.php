@@ -3,6 +3,9 @@ require_once 'Tasks/LargestPrimeFactor.php';
 require_once 'Tasks/EvenFibonacciNumbers.php';
 require_once 'Tasks/MultiplesOf3And5.php';
 require_once 'Tasks/LargestPalindromeProduct.php';
+require_once 'Tasks/SmallestMultiple.php';
+require_once 'Tasks/SumSquareDifference.php';
+require_once 'Tasks/PrimeNumber.php';
 require_once 'FactoryMethod.php';
 
 /**
