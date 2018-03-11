@@ -6,6 +6,7 @@ require_once 'Tasks/LargestPalindromeProduct.php';
 require_once 'Tasks/SmallestMultiple.php';
 require_once 'Tasks/SumSquareDifference.php';
 require_once 'Tasks/PrimeNumber.php';
+require_once 'Tasks/LargestProductSeries.php';
 require_once 'FactoryMethod.php';
 
 /**
