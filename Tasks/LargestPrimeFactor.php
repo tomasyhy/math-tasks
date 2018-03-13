@@ -1,5 +1,5 @@
 <?php
-require_once 'TaskInterface.php';
+require_once 'TaskInterface/TaskInterface.php';
 
 /**
  * Created by PhpStorm.

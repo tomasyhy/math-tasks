@@ -1,12 +1,11 @@
 <?php
-require_once 'Tasks/LargestPrimeFactor.php';
-require_once 'Tasks/EvenFibonacciNumbers.php';
-require_once 'Tasks/MultiplesOf3And5.php';
-require_once 'Tasks/LargestPalindromeProduct.php';
-require_once 'Tasks/SmallestMultiple.php';
-require_once 'Tasks/SumSquareDifference.php';
-require_once 'Tasks/PrimeNumber.php';
-require_once 'Tasks/LargestProductSeries.php';
+$directory = new RecursiveDirectoryIterator('Tasks');
+$iterator = new RecursiveIteratorIterator($directory);
+$files = new RegexIterator($iterator, '/^.+\.php$/i', RecursiveRegexIterator::GET_MATCH);
+
+foreach ($files as $file) {
+    require_once $file[0];
+}
 require_once 'FactoryMethod.php';
 
 /**

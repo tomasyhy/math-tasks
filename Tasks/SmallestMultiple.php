@@ -1,6 +1,4 @@
 <?php
-require_once 'TaskInterface.php';
-
 
 class SmallestMultiple implements TaskInterface
 {

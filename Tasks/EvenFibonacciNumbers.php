@@ -1,5 +1,4 @@
 <?php
-require_once 'TaskInterface.php';
 
 /**
  * Created by PhpStorm.
